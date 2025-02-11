@@ -48,6 +48,7 @@ def fetch_and_save_chat_data(vodId):
 
                         # 파일에 기록
                         file.write(log_message)
+                        time.sleep(1)
 
                     # 다음 메시지 시간 설정
                     nextPlayerMessageTime = data['content']['nextPlayerMessageTime']
